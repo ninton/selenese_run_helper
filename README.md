@@ -87,7 +87,8 @@ else
 fi
 ```
 
-##　使い方の例
+
+## 使い方の例
 
 jpostal_json の test_and_push.sh で、本ヘルパースクリプトを使っています。
 
