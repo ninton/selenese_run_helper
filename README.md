@@ -11,7 +11,7 @@ Released under the MIT license - http://en.wikipedia.org/wiki/MIT_License
 
 __xvfb__
 
-FireFoxをヘッドレスで起動するための仮想Ｘです。
+FireFoxをヘッドレスで起動するための仮想Ｘディスプレイバッファです。
 
 ```
 $ sudo apt install xvfb
@@ -51,7 +51,7 @@ $ cd selenese_run_helper
 $ ./download_linux.sh
 ```
 
-(3) ~/selenese_run_helper をPATHに追加してください。ねんのために、~/.bashrc のコピーをとっておきます。
+(3) \~/selenese_run_helper をPATHに追加してください。ねんのために、\~/.bashrc のコピーをとっておきます。
 
 ```
 $ cp ~/.bashrc ~/.bashrc.bak
