@@ -1,0 +1,7 @@
+.idea/*
+archives/*
+*.tar.gz
+*.jar
+*.zip
+geckodriver*
+chromedriver*
