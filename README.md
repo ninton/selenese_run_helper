@@ -1,6 +1,8 @@
 # selenese_run_helper
 
-seleneseテストをFireFoxで実行するためのヘルパースクリプトです。
+Selenese Test SuiteをFireFoxで実行するためのヘルパースクリプト
+
+Selenese Test Suiteを実行するときの定形処理をスクリプトにまとめました。
 
 Copyright 2020-, Aoki Makoto, Ninton G.K. http://www.ninton.co.jp  
 Released under the MIT license - http://en.wikipedia.org/wiki/MIT_License
@@ -52,7 +54,9 @@ $ ./download_linux.sh
 (3) ~/selenese_run_helper をPATHに追加してください。
 
 ```
+$ cp .bashrc .bashrc.bak
 $ echo "export PATH=$(pwd):\$PATH" >> ~/.bashrc
+
 ```
 
 (4) ターミナルを閉じて、再度ターミナルを開いて、さきほどのPATH設定を適用してください。
@@ -66,11 +70,11 @@ $ which selenium_server_start.sh
 
 テスト対象のwebサイトはすでにあるものとします。
 
-selenese HTMLが selenese/testcase_1.html にあるとします。
+Selenese Test Suite HTMLが selenese/testsuite_1.html にあるとします。
 
 ```
 selenium_server_start.sh
-selenese_run.sh selenese/testcase_1.html
+selenese_run.sh selenese/testsuite_1.html
 selenium_server_stop.sh
 ```
 
@@ -94,6 +98,6 @@ jpostal_json の test_and_push.sh で、本ヘルパースクリプトを使っ�
 
 https://github.com/ninton/jpostal_json/blob/master/test_and_push.sh
 
-selenese HTMLは、
+Selenese Test Suite HTMLは、
 
 https://github.com/ninton/jpostal_json/blob/master/selenese/smoke_local.html
