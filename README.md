@@ -51,12 +51,23 @@ $ cd selenese_run_helper
 $ ./download_linux.sh
 ```
 
-(3) ~/selenese_run_helper をPATHに追加してください。
+(3) ~/selenese_run_helper をPATHに追加してください。ねんのために、~/.bashrc のコピーをとっておきます。
 
 ```
-$ cp .bashrc .bashrc.bak
-$ echo "export PATH=$(pwd):\$PATH" >> ~/.bashrc
+$ cp ~/.bashrc ~/.bashrc.bak
+```
 
+次のechoコマンドで表示された１行を ~/.bashrc に追加してください。
+
+```
+$ echo export PATH="$(pwd):\$PATH"
+export PATH=/home/jenkins/selenese_run_helper:$PATH
+```
+
+この例では、次の１行を ~/.bashrc に追加してください。
+
+```
+export PATH=/home/jenkins/selenese_run_helper:$PATH
 ```
 
 (4) ターミナルを閉じて、再度ターミナルを開いて、さきほどのPATH設定を適用してください。
