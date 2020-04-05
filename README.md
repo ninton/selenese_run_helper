@@ -51,7 +51,7 @@ $ cd selenese_run_helper
 $ ./download_linux.sh
 ```
 
-(3) ~/selenese_run_helper をPATHに追加してください。ねんのために、~/.bashrc のコピーをとっておきます。
+(3) \~/selenese_run_helper をPATHに追加してください。ねんのために、\~/.bashrc のコピーをとっておきます。
 
 ```
 $ cp ~/.bashrc ~/.bashrc.bak
